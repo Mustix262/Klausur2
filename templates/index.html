@@ -1,6 +1,12 @@
 {% extends "base.html" %}
 
 {% block content %}
+
+    <form method="post" action="/upload" enctype="multipart/form-data">
+  <input type="file" name="pdf_file" accept="application/pdf" class="form-control" required>
+  <button type="submit" class="btn btn-primary">PDF hochladen</button>
+    </form>
+
     <div class="container">
         <h4>Hier können Sie einen moderierten GPT-Link für Ihre Schülerinnen und Schüler generieren:</h4>
         <a class="btn btn-primary" href="generator.html" role="button">Generiere Link (Chat)</a><br><br>
